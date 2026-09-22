@@ -1,0 +1,92 @@
+{
+  "account": {
+    "name": "Northwind Logistics",
+    "arr": 480000,
+    "segment": "Mid-Market",
+    "csm": "Jamie Ortiz",
+    "health_score": 58,
+    "days_to_renewal": 70
+  },
+  "findings": [
+    {
+      "category": "Usage and Adoption",
+      "classification": "fact",
+      "claim": "Two daily-active regional manager users left the company in the last month; their seats have not been reassigned or backfilled.",
+      "source": "CSM call transcript, 2026-09-15",
+      "severity": "risk"
+    },
+    {
+      "category": "Usage and Adoption",
+      "classification": "hypothesis",
+      "claim": "Overall platform usage likely declined this month as a result of the departed users, though aggregate login data was not available for this review.",
+      "source": "Inferred from CSM call transcript, 2026-09-15",
+      "severity": "watch"
+    },
+    {
+      "category": "Relationship and Stakeholders",
+      "classification": "fact",
+      "claim": "The CFO now requires visibility on any renewal or spend decision over six figures, a new approval layer introduced after a recent acquisition.",
+      "source": "CSM call transcript, 2026-09-15",
+      "severity": "watch"
+    },
+    {
+      "category": "Relationship and Stakeholders",
+      "classification": "unknown",
+      "claim": "No current mapping exists of who at Northwind owns the decision to onboard the newly acquired entity onto the platform.",
+      "source": "Not addressed in available sources",
+      "severity": "neutral"
+    },
+    {
+      "category": "Commercial and Renewal",
+      "classification": "fact",
+      "claim": "Renewal is due in 70 days. The CSM proactively opened the renewal conversation at this checkpoint, ahead of the customer.",
+      "source": "CSM call transcript, 2026-09-15",
+      "severity": "neutral"
+    },
+    {
+      "category": "Commercial and Renewal",
+      "classification": "hypothesis",
+      "claim": "The CFO's new spend-visibility requirement could slow renewal approval versus prior cycles, though the CFO has not yet reviewed a proposal.",
+      "source": "Inferred from CSM call transcript, 2026-09-15",
+      "severity": "watch"
+    },
+    {
+      "category": "Commercial and Renewal",
+      "classification": "hypothesis",
+      "claim": "A health score of 58/100 is consistent with a recent adoption dip from the departed users rather than a deeper product dissatisfaction signal, based on available context.",
+      "source": "Derived from health_score input and CSM call transcript",
+      "severity": "watch"
+    },
+    {
+      "category": "Expansion Signals",
+      "classification": "fact",
+      "claim": "Northwind acquired a smaller freight company last quarter. No internal owner has been assigned to decide whether the new entity will onboard onto the platform.",
+      "source": "CSM call transcript, 2026-09-15",
+      "severity": "opportunity"
+    },
+    {
+      "category": "Expansion Signals",
+      "classification": "hypothesis",
+      "claim": "The acquisition likely represents incremental ARR if the second entity onboards, though deal size has not been estimated or scoped yet.",
+      "source": "Inferred, not yet sized",
+      "severity": "opportunity"
+    },
+    {
+      "category": "Support and Product",
+      "classification": "unknown",
+      "claim": "No support ticket history was available for this review. Whether there are open or recent product complaints is unknown.",
+      "source": "Not connected in this review",
+      "severity": "neutral"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Whether the second-entity onboarding overview promised to the customer is actually ready to send",
+      "claim_a": "On the call, the CSM told the customer she would send a second-entity onboarding overview by Friday.",
+      "source_a": "CSM call transcript, 2026-09-15",
+      "claim_b": "The CSM's own internal note the next day admits she has not looped in sales or the onboarding team yet, and needs to before sending anything.",
+      "source_b": "CSM internal note, 2026-09-16",
+      "question_to_validate": "Has the onboarding overview actually been sent yet, and were sales and onboarding looped in before it went out?"
+    }
+  ]
+}

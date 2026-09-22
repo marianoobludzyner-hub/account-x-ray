@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Account X-Ray: Northwind Logistics</title>
+<style>
+  body { background:#fcfcfb; color:#0b0b0b; font-family: -apple-system, "Segoe UI", sans-serif;
+         max-width: 760px; margin: 0 auto; padding: 40px 24px; }
+  .eyebrow { color:#898781; font-weight:700; font-size:13px; letter-spacing:0.03em; }
+  h1 { font-size: 30px; margin: 6px 0 2px 0; }
+  .meta { color:#52514e; font-size:15px; margin-bottom: 18px; }
+  .overall-card { background:#f4f3ef; border-radius:16px; padding:20px 24px; margin: 18px 0 28px 0;
+                    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+  .overall-label { color:#898781; font-weight:700; font-size:12px; }
+  .overall-value { font-size:26px; font-weight:700; }
+  .stats { display:flex; gap:22px; }
+  .stat { text-align:center; }
+  .stat-value { font-size:22px; font-weight:700; }
+  .stat-label { color:#898781; font-size:11px; font-weight:700; }
+  h2 { font-size:18px; border-top:1px solid #e1e0d9; padding-top:18px; margin-top:28px; }
+  .finding { display:flex; gap:12px; margin: 10px 0; }
+  .finding-bar { width:4px; border-radius:2px; flex-shrink:0; }
+  .finding-body { background:#f9f9f7; border-radius:10px; padding:12px 16px; flex:1; }
+  .tag { display:inline-block; font-size:10px; font-weight:700; border:1px solid; border-radius:10px;
+          padding:2px 8px; margin-bottom:6px; }
+  .claim { margin: 4px 0; font-size:15px; }
+  .source { margin:0; color:#898781; font-size:12.5px; }
+  .muted { color:#52514e; font-size:14px; }
+  ul.unknowns { padding-left: 20px; }
+  ul.unknowns li { margin: 6px 0; }
+  .legend { display:flex; gap:18px; flex-wrap:wrap; margin: 4px 0 22px 0; }
+  .legend-item { display:flex; align-items:center; gap:6px; font-size:12px; color:#52514e; }
+  .legend-swatch { width:10px; height:10px; border-radius:3px; flex-shrink:0; }
+  .conflict { background:#fdf1e9; border-left:4px solid #eb6834; border-radius:8px; padding:12px 16px; margin:10px 0; }
+  .conflict-topic { font-weight:700; margin:0 0 6px 0; }
+  .conflict-side { margin:4px 0; font-size:14.5px; }
+  .conflict-tag { display:inline-block; font-weight:700; font-size:11px; background:#eb6834; color:#ffffff;
+                    border-radius:4px; padding:1px 6px; margin-right:6px; }
+  .conflict-question { margin:8px 0 0 0; font-size:13.5px; color:#52514e; font-style:italic; }
+  footer { margin-top: 40px; padding-top: 16px; border-top:1px solid #e1e0d9;
+            color:#898781; font-size:12.5px; }
+  footer a { color:#52514e; }
+</style>
+</head>
+<body>
+  <div class="eyebrow">OBLUDZYNER &amp; CO. - OPEN-SOURCE ACCOUNT X-RAY</div>
+  <h1>Northwind Logistics</h1>
+  <div class="meta">ARR $480,000 | Mid-Market | CSM: Jamie Ortiz | Health 58/100 | Renews in 70 days</div>
+
+  <div class="overall-card">
+    <div>
+      <div class="overall-label">OVERALL</div>
+      <div class="overall-value">Watch</div>
+    </div>
+    <div class="stats"><div class="stat"><div class="stat-value" style="color:#0ca30c">4</div><div class="stat-label">FACT</div></div><div class="stat"><div class="stat-value" style="color:#fab219">4</div><div class="stat-label">HYPOTHESIS</div></div><div class="stat"><div class="stat-value" style="color:#898781">2</div><div class="stat-label">UNKNOWN</div></div><div class="stat"><div class="stat-value" style="color:#eb6834">1</div><div class="stat-label">CONFLICT</div></div></div>
+  </div>
+
+  <div class="legend">
+    <span class="legend-item"><span class="legend-swatch" style="background:#d03b3b"></span>Risk</span>
+    <span class="legend-item"><span class="legend-swatch" style="background:#fab219"></span>Watch</span>
+    <span class="legend-item"><span class="legend-swatch" style="background:#2a78d6"></span>Opportunity</span>
+    <span class="legend-item"><span class="legend-swatch" style="background:#898781"></span>Neutral (the left bar on each finding)</span>
+  </div>
+
+  <h2>Commercial and Renewal</h2>
+        <div class="finding">
+          <div class="finding-bar" style="background:#898781"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#0ca30c;border-color:#0ca30c">FACT</span>
+            <p class="claim">Renewal is due in 70 days. The CSM proactively opened the renewal conversation at this checkpoint, ahead of the customer.</p>
+            <p class="source">Source: CSM call transcript, 2026-09-15</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-bar" style="background:#fab219"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#fab219;border-color:#fab219">HYPOTHESIS</span>
+            <p class="claim">The CFO&#x27;s new spend-visibility requirement could slow renewal approval versus prior cycles, though the CFO has not yet reviewed a proposal.</p>
+            <p class="source">Source: Inferred from CSM call transcript, 2026-09-15</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-bar" style="background:#fab219"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#fab219;border-color:#fab219">HYPOTHESIS</span>
+            <p class="claim">A health score of 58/100 is consistent with a recent adoption dip from the departed users rather than a deeper product dissatisfaction signal, based on available context.</p>
+            <p class="source">Source: Derived from health_score input and CSM call transcript</p>
+          </div>
+        </div><h2>Expansion Signals</h2>
+        <div class="finding">
+          <div class="finding-bar" style="background:#2a78d6"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#0ca30c;border-color:#0ca30c">FACT</span>
+            <p class="claim">Northwind acquired a smaller freight company last quarter. No internal owner has been assigned to decide whether the new entity will onboard onto the platform.</p>
+            <p class="source">Source: CSM call transcript, 2026-09-15</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-bar" style="background:#2a78d6"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#fab219;border-color:#fab219">HYPOTHESIS</span>
+            <p class="claim">The acquisition likely represents incremental ARR if the second entity onboards, though deal size has not been estimated or scoped yet.</p>
+            <p class="source">Source: Inferred, not yet sized</p>
+          </div>
+        </div><h2>Relationship and Stakeholders</h2>
+        <div class="finding">
+          <div class="finding-bar" style="background:#fab219"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#0ca30c;border-color:#0ca30c">FACT</span>
+            <p class="claim">The CFO now requires visibility on any renewal or spend decision over six figures, a new approval layer introduced after a recent acquisition.</p>
+            <p class="source">Source: CSM call transcript, 2026-09-15</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-bar" style="background:#898781"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#898781;border-color:#898781">UNKNOWN</span>
+            <p class="claim">No current mapping exists of who at Northwind owns the decision to onboard the newly acquired entity onto the platform.</p>
+            <p class="source">Source: Not addressed in available sources</p>
+          </div>
+        </div><h2>Support and Product</h2>
+        <div class="finding">
+          <div class="finding-bar" style="background:#898781"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#898781;border-color:#898781">UNKNOWN</span>
+            <p class="claim">No support ticket history was available for this review. Whether there are open or recent product complaints is unknown.</p>
+            <p class="source">Source: Not connected in this review</p>
+          </div>
+        </div><h2>Usage and Adoption</h2>
+        <div class="finding">
+          <div class="finding-bar" style="background:#d03b3b"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#0ca30c;border-color:#0ca30c">FACT</span>
+            <p class="claim">Two daily-active regional manager users left the company in the last month; their seats have not been reassigned or backfilled.</p>
+            <p class="source">Source: CSM call transcript, 2026-09-15</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-bar" style="background:#fab219"></div>
+          <div class="finding-body">
+            <span class="tag" style="color:#fab219;border-color:#fab219">HYPOTHESIS</span>
+            <p class="claim">Overall platform usage likely declined this month as a result of the departed users, though aggregate login data was not available for this review.</p>
+            <p class="source">Source: Inferred from CSM call transcript, 2026-09-15</p>
+          </div>
+        </div>
+  
+        <h2>Conflicting information</h2>
+        <p class="muted">Two sources disagree. Shown as a conflict to resolve, never silently picked one way.</p>
+        
+        <div class="conflict">
+          <p class="conflict-topic">Whether the second-entity onboarding overview promised to the customer is actually ready to send</p>
+          <p class="conflict-side"><span class="conflict-tag">A</span>On the call, the CSM told the customer she would send a second-entity onboarding overview by Friday. <span class="source">(CSM call transcript, 2026-09-15)</span></p>
+          <p class="conflict-side"><span class="conflict-tag">B</span>The CSM&#x27;s own internal note the next day admits she has not looped in sales or the onboarding team yet, and needs to before sending anything. <span class="source">(CSM internal note, 2026-09-16)</span></p>
+          <p class="conflict-question">To validate: Has the onboarding overview actually been sent yet, and were sales and onboarding looped in before it went out?</p>
+        </div>
+  
+        <h2>Open questions</h2>
+        <p class="muted">Stated openly rather than guessed. Answering these is usually the fastest way to move this account forward.</p>
+        <ul class="unknowns"><li>No current mapping exists of who at Northwind owns the decision to onboard the newly acquired entity onto the platform.</li><li>No support ticket history was available for this review. Whether there are open or recent product complaints is unknown.</li></ul>
+
+  <footer>
+    This is the open-source, directional version of the account x-ray used inside a SHIFT Method engagement.
+    For a Revenue Audit built on your real accounts and data: <a href="https://obludzyner.com">obludzyner.com</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Call: Northwind Logistics <> CSM check-in
+Attendees: Alex Chen (VP Operations, Northwind), Jamie Ortiz (CSM)
+(Synthetic transcript, for demonstration only)
+
+Jamie: Hey Alex, thanks for making time today. Before we get into it, I wanted to flag we're about 70 days out from your renewal, so I wanted to walk through where things stand and make sure there's nothing on your end we should be planning around.
+
+Alex: Sure, appreciate you bringing that up. Things have been fine on our side, honestly a bit quiet.
+
+Jamie: Good to hear. I did notice usage dipped a bit on the ops team over the last month, anything going on there?
+
+Alex: Yeah, actually two of our regional managers who used the dashboards daily left the company. We haven't backfilled yet.
+
+Jamie: Got it, that would explain it. Do you know roughly when those roles get filled? I want to make sure whoever comes in gets onboarded properly so we don't lose that adoption.
+
+Alex: Probably next month, HR is on it.
+
+Jamie: Makes sense. Separately, I saw Northwind acquired a smaller freight company last quarter, congrats on that. Are they going to be using our platform too, or is that still being figured out?
+
+Alex: Still being figured out honestly, nobody's really owned that conversation yet.
+
+Jamie: Would it help if I put together a quick view of what onboarding a second entity would look like, just so you have it if that conversation comes up?
+
+Alex: Yeah that would actually be useful, can you send that over?
+
+Jamie: Will do, I'll get that to you by Friday. On the renewal side, is Priya still the main budget approver, or has that shifted since the acquisition?
+
+Alex: Priya's still on the finance side but I think the CFO wants visibility on anything over six figures now, given the acquisition.
+
+Jamie: Okay, good to know, I'll make sure the renewal proposal accounts for that. Anything else on your radar before we wrap?
+
+Alex: No, I think that covers it.
+
+Jamie: Great, I'll send the second-entity onboarding overview by Friday, and I'll follow up the week of the 14th once I've confirmed the CFO visibility piece with our team. Talk soon.

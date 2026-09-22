@@ -1,0 +1,55 @@
+================================================================
+ACCOUNT X-RAY: Northwind Logistics
+================================================================
+ARR $480,000  |  Segment: Mid-Market  |  CSM: Jamie Ortiz  |  Health: 58/100
+Renews in 70 days
+
+OVERALL: Watch
+  10 findings -- 4 fact, 4 hypothesis, 2 unknown, 1 conflict(s)
+
+-- Commercial and Renewal ----------------------------
+  [FACT] Renewal is due in 70 days. The CSM proactively opened the renewal conversation at this checkpoint, ahead of the customer.
+      Source: CSM call transcript, 2026-09-15
+  [HYPOTHESIS] The CFO's new spend-visibility requirement could slow renewal approval versus prior cycles, though the CFO has not yet reviewed a proposal.
+      Source: Inferred from CSM call transcript, 2026-09-15
+  [HYPOTHESIS] A health score of 58/100 is consistent with a recent adoption dip from the departed users rather than a deeper product dissatisfaction signal, based on available context.
+      Source: Derived from health_score input and CSM call transcript
+
+-- Expansion Signals ---------------------------------
+  [FACT] Northwind acquired a smaller freight company last quarter. No internal owner has been assigned to decide whether the new entity will onboard onto the platform.
+      Source: CSM call transcript, 2026-09-15
+  [HYPOTHESIS] The acquisition likely represents incremental ARR if the second entity onboards, though deal size has not been estimated or scoped yet.
+      Source: Inferred, not yet sized
+
+-- Relationship and Stakeholders ---------------------
+  [FACT] The CFO now requires visibility on any renewal or spend decision over six figures, a new approval layer introduced after a recent acquisition.
+      Source: CSM call transcript, 2026-09-15
+  [UNKNOWN] No current mapping exists of who at Northwind owns the decision to onboard the newly acquired entity onto the platform.
+      Source: Not addressed in available sources
+
+-- Support and Product -------------------------------
+  [UNKNOWN] No support ticket history was available for this review. Whether there are open or recent product complaints is unknown.
+      Source: Not connected in this review
+
+-- Usage and Adoption --------------------------------
+  [FACT] Two daily-active regional manager users left the company in the last month; their seats have not been reassigned or backfilled.
+      Source: CSM call transcript, 2026-09-15
+  [HYPOTHESIS] Overall platform usage likely declined this month as a result of the departed users, though aggregate login data was not available for this review.
+      Source: Inferred from CSM call transcript, 2026-09-15
+
+CONFLICTING INFORMATION (shown, not silently resolved)
+  - Whether the second-entity onboarding overview promised to the customer is actually ready to send
+      A: On the call, the CSM told the customer she would send a second-entity onboarding overview by Friday.  [CSM call transcript, 2026-09-15]
+      B: The CSM's own internal note the next day admits she has not looped in sales or the onboarding team yet, and needs to before sending anything.  [CSM internal note, 2026-09-16]
+      Question to validate: Has the onboarding overview actually been sent yet, and were sales and onboarding looped in before it went out?
+
+OPEN QUESTIONS (unknowns, stated openly rather than guessed)
+  - No current mapping exists of who at Northwind owns the decision to onboard the newly acquired entity onto the platform.
+  - No support ticket history was available for this review. Whether there are open or recent product complaints is unknown.
+
+================================================================
+This is the open-source, directional version of the account x-ray
+used inside a SHIFT Method engagement.
+For a Revenue Audit built on your real accounts and data:
+  https://obludzyner.com
+================================================================
